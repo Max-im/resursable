@@ -58,17 +58,14 @@ export default {
       else{
         target.innerHTML = '<';
       }
-      this.changeBtnVal(target)
-    },
-    changeBtnVal: function(){
-
     },
 
     showNav: function(){
       const aside = document.querySelector('.aside');
       const target = document.querySelector('.aside__toggleBtn');
       if(this.pageSize !== 'S' &&
-         aside.classList.contains('aside_hide')
+        aside &&
+        aside.classList.contains('aside_hide')
       ){
         aside.classList.remove('aside_hide'); 
         target.innerHTML = '<';
@@ -177,12 +174,11 @@ $accent: #0793B7;
   bottom: 0;
   left: 0;
   display: block;
-  width: calc( 100% - 20px );
-  color: #333;
+  width: calc( 100% - 40px );
+  color: darken($accent, 30%);
   padding: 20px 10px 30px 30px;
-  background: rgba(255,255,255,.2);
   &__link{
-    color: #333;
+    color: darken($accent, 30%);
     text-decoration: underline;
     margin: 0 0 15px 0;
     display: block;
