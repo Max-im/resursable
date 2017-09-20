@@ -1,0 +1,261 @@
+<template> 
+  <aside class="aside">
+    <router-link to='/' class="aside__logo">code - guide</router-link>
+    <nav role="nav" class="nav">
+      <ul>
+        <li v-for="item in list">
+          <router-link :to="item" class="nav__item">{{item}}</router-link>
+        </li>
+      </ul>
+    </nav>
+    <a href="#" 
+      class="aside__toggle"
+      v-show="pageSize === 'S'"
+      @click.prevent="toggleNav">
+      <
+    </a>
+  </aside>
+</template>
+
+
+
+
+<script>
+export default {
+  name: 'navPanel',
+  data () {
+    return {
+      pageSize: "",
+      list: ['Prepare', 'Design', 'HTML / CSS', 'JavaScript']
+
+    }
+  },
+  methods:{
+    toggleNav: function(e){
+      const target = e.target;
+      const aside = document.querySelector('.aside');
+      aside.classList.toggle('aside_hide');
+      if(aside.classList.contains('aside_hide')){
+        target.innerHTML = '>';
+      }
+      else{
+        target.innerHTML = '<';
+      }
+
+    },
+    resizeWidow: function(){
+      const pageWidth = window.innerWidth;
+      if( pageWidth > 992 ) {
+        this.pageSize = "L";
+      }
+      else if ( pageWidth > 768 ) {
+        this.pageSize = "M";
+      }
+      else{
+        this.pageSize = "S";
+      }
+    }
+  },
+  created: function() {
+    this.resizeWidow();
+    window.addEventListener('resize', this.resizeWidow);
+  }
+
+}
+</script>
+
+
+
+<style lang="scss">
+
+$accent: #0793B7;
+
+.aside{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  border-right: 3px solid darken($accent, 20%);
+  background: $accent;
+  transition: transform .5s;
+  &_hide{
+    transform: translateX(-100%);
+    transition: transform .5s;
+  }
+  &__logo{
+    text-transform: uppercase;
+    line-height: 200px;
+    padding: 0 0 0 30px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  &__toggle{
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    display: block;
+    background: $accent;
+    color: #fff;
+    padding: 15px 5px;
+    border-right: 2px solid darken($accent, 20%);
+    border-top: 2px solid darken($accent, 20%);
+    border-bottom: 2px solid darken($accent, 20%);
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  &__item{
+    display: block;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 10px 100px 10px 30px;
+    margin: 10px 0;
+    transition: all .6s;
+    letter-spacing: 1px;
+    &:after{
+      content: '';
+      transition: all .3s;
+      z-index: -1;
+      display: block;
+      height: 100%;
+      width: 0px;
+      position: absolute;
+      right: -5px;
+      top: 0;
+      background: #fff;
+    }
+    &:hover{
+      color: $accent;
+      &:after{
+        width: calc( 100% + 5px );
+      }
+    }
+  }
+}
+
+
+
+ /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  
+
+
+}
+
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  
+
+}
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.aside{
+  &__logo{
+    line-height: 100px;
+    padding: 0 0 0 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+}
+
+
+.nav{
+  &__item{
+    padding: 10px 50px 10px 20px;
+    margin: 5px 0;
+  }
+}
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+  
+
+}
+
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+
+
+}
+
+
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+
+
+
+}
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+
+
+}
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+
+
+}
+
+
+
+
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+
+
+}
+
+
+</style>
