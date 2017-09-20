@@ -9,11 +9,24 @@
       </ul>
     </nav>
     <a href="#" 
-      class="aside__toggle"
+      class="aside__toggleBtn"
       v-show="pageSize === 'S'"
       @click.prevent="toggleNav">
       <
     </a>
+
+    <footer class="footer">
+      <a 
+        href="https://max-im.github.io/" 
+        class="footer__link"
+        target="_blank">
+        Max Pozhidayev
+      </a>
+      <small class="footer__copyright">
+        Copyright © {{year}}
+      </small>
+
+    </footer>
   </aside>
 </template>
 
@@ -26,9 +39,13 @@ export default {
   data () {
     return {
       pageSize: "",
-      list: ['Prepare', 'Design', 'HTML / CSS', 'JavaScript']
+      list: ['Prepare', 'Design', 'HTML / CSS', 'JavaScript'],
+      year: new Date().getFullYear()
 
     }
+  },
+  computed: {
+
   },
   methods:{
     toggleNav: function(e){
@@ -41,8 +58,23 @@ export default {
       else{
         target.innerHTML = '<';
       }
+      this.changeBtnVal(target)
+    },
+    changeBtnVal: function(){
 
     },
+
+    showNav: function(){
+      const aside = document.querySelector('.aside');
+      const target = document.querySelector('.aside__toggleBtn');
+      if(this.pageSize !== 'S' &&
+         aside.classList.contains('aside_hide')
+      ){
+        aside.classList.remove('aside_hide'); 
+        target.innerHTML = '<';
+      }
+    },
+
     resizeWidow: function(){
       const pageWidth = window.innerWidth;
       if( pageWidth > 992 ) {
@@ -54,6 +86,7 @@ export default {
       else{
         this.pageSize = "S";
       }
+      this.showNav();
     }
   },
   created: function() {
@@ -91,7 +124,7 @@ $accent: #0793B7;
     letter-spacing: 2px;
     font-size: 20px;
   }
-  &__toggle{
+  &__toggleBtn{
     position: absolute;
     top: 10px;
     right: -20px;
@@ -139,7 +172,22 @@ $accent: #0793B7;
   }
 }
 
-
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: calc( 100% - 20px );
+  color: #333;
+  padding: 20px 10px 30px 30px;
+  background: rgba(255,255,255,.2);
+  &__link{
+    color: #333;
+    text-decoration: underline;
+    margin: 0 0 15px 0;
+    display: block;
+  }
+}
 
  /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -181,6 +229,17 @@ $accent: #0793B7;
     margin: 5px 0;
   }
 }
+
+.footer{
+  padding: 20px 10px 20px 20px;
+  &__link{
+    color: #333;
+    text-decoration: underline;
+    margin: 0 0 15px 0;
+    display: block;
+  }
+}
+
 
 }
 

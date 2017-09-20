@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <cHeader></cHeader>
+    <div class="container_flex">
+      
+      <navPanel></navPanel>
+    </div>
   </div>
 </template>
 
 <script>
-import cHeader from './components/cHeader.vue';
+import navPanel from './components/navPanel.vue';
 
 export default {
   name: 'app',
   components: {
-    cHeader
+    navPanel
   }
 }
 </script>
@@ -29,7 +32,6 @@ a{
 
 body{
   font-family: 'roboto', 'sans serif', ubuntu, arial;
-  // background: #C299C9;
 }
 
 .container{
