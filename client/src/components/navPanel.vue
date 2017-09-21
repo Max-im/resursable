@@ -1,18 +1,17 @@
 <template> 
-  <aside class="aside">
+  <aside class="aside" :class="{aside_hide: isHide}">
     <router-link to='/' class="aside__logo">code - guide</router-link>
     <nav role="nav" class="nav">
       <ul>
-        <li v-for="item in list">
-          <router-link :to="item" class="nav__item">{{item}}</router-link>
+        <li v-for="(item, index) in list" :key="index">
+          <router-link :to="'/'+item" class="nav__item">{{item}}</router-link>
         </li>
       </ul>
     </nav>
     <a href="#" 
       class="aside__toggleBtn"
-      v-show="pageSize === 'S'"
       @click.prevent="toggleNav">
-      <
+      ↔
     </a>
 
     <footer class="footer">
@@ -39,25 +38,21 @@ export default {
   data () {
     return {
       pageSize: "",
-      list: ['Prepare', 'Design', 'HTML / CSS', 'JavaScript'],
+      list: ['Prepare', 'Design', 'HTML+CSS', 'JavaScript'],
       year: new Date().getFullYear()
 
     }
   },
   computed: {
-
+    isHide: function() {
+      return this.pageSize === 'S' ? true : false; 
+    }
   },
   methods:{
     toggleNav: function(e){
       const target = e.target;
       const aside = document.querySelector('.aside');
       aside.classList.toggle('aside_hide');
-      if(aside.classList.contains('aside_hide')){
-        target.innerHTML = '>';
-      }
-      else{
-        target.innerHTML = '<';
-      }
     },
 
     showNav: function(){
@@ -102,20 +97,24 @@ $accent: #0793B7;
 
 .aside{
   position: fixed;
-  z-index: 1;
-  top: 0;
   height: 100%;
-  border-right: 3px solid darken($accent, 20%);
+  width: 250px;
+  top: 0;
+  left: 0;
+  padding: 0 0 0 20px;
+  box-sizing: border-box;
   background: $accent;
   transition: transform .5s;
+  border-right: 3px solid darken($accent, 30%);
+  z-index: 1;
   &_hide{
     transform: translateX(-100%);
     transition: transform .5s;
+
   }
   &__logo{
     text-transform: uppercase;
     line-height: 200px;
-    padding: 0 0 0 30px;
     color: #fff;
     font-weight: bold;
     letter-spacing: 2px;
@@ -123,8 +122,8 @@ $accent: #0793B7;
   }
   &__toggleBtn{
     position: absolute;
-    top: 10px;
-    right: -20px;
+    top: 40px;
+    right: -25px;
     display: block;
     background: $accent;
     color: #fff;
@@ -133,6 +132,9 @@ $accent: #0793B7;
     border-top: 2px solid darken($accent, 20%);
     border-bottom: 2px solid darken($accent, 20%);
     border-radius: 0 5px 5px 0;
+    &:hover{
+      background: linear-gradient(270deg, lighten($accent, 5%), $accent);
+    }
   }
 }
 
@@ -144,7 +146,7 @@ $accent: #0793B7;
     position: relative;
     z-index: 1;
     color: #fff;
-    padding: 10px 100px 10px 30px;
+    padding: 10px 100px 10px 20px;
     margin: 10px 0;
     transition: all .6s;
     letter-spacing: 1px;
@@ -156,14 +158,14 @@ $accent: #0793B7;
       height: 100%;
       width: 0px;
       position: absolute;
-      right: -5px;
+      right: -25px;
       top: 0;
       background: #fff;
     }
     &:hover{
       color: $accent;
       &:after{
-        width: calc( 100% + 5px );
+        width: calc( 100% + 15px );
       }
     }
   }
@@ -215,24 +217,6 @@ $accent: #0793B7;
     padding: 0 0 0 20px;
     letter-spacing: 1px;
     font-size: 14px;
-  }
-}
-
-
-.nav{
-  &__item{
-    padding: 10px 50px 10px 20px;
-    margin: 5px 0;
-  }
-}
-
-.footer{
-  padding: 20px 10px 20px 20px;
-  &__link{
-    color: #333;
-    text-decoration: underline;
-    margin: 0 0 15px 0;
-    display: block;
   }
 }
 

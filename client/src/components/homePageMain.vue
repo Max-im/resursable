@@ -1,11 +1,13 @@
 <template> 
-  <div class="homePageMain">
-    <h1 class="homePageMain__header">code -
-      <span class="homePageMain__spanWrap">
-        <span class="homePageMain__span">guide</span>
-      </span>
-    </h1>
-  </div>
+  <main class="main">
+    <div class="homePageMain">
+      <h1 class="homePageMain__header">code -
+        <span class="homePageMain__spanWrap">
+          <span class="homePageMain__span">guide</span>
+        </span>
+      </h1>
+    </div>
+  </main>
 </template>
 
 
@@ -35,9 +37,21 @@ export default {
 
 <style lang="scss">
 
+$accent: #0793B7;
+
+
+.main{
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: #fff;
+  padding: 50px 20px;
+}
+
 .homePageMain{
   display: flex;
   height: 100%;
+
   &__header{
     margin: auto;
     text-transform: uppercase;
@@ -101,6 +115,13 @@ export default {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+.homePageMain{
+  &__header{
+    font-size: 28px;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.4);
+    letter-spacing: 3px;
+  }
+}
 
   
 
