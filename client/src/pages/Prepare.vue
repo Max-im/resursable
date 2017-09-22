@@ -2,8 +2,8 @@
   <div id="prepare">
   	<div class="container_flex">
   		<navPanel></navPanel>
-  		<prepareContent></prepareContent>
   	</div>
+    <prepareContent></prepareContent>
   </div>
 </template>
 

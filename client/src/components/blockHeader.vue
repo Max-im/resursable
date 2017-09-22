@@ -1,34 +1,26 @@
 <template>
-  <main class="main">
-    <div class="js">
-      <blockHeader :val="headerText"></blockHeader>
-      <contentEl :db="dbPost"></contentEl>
+  <div class="blockHeader__wrap">
+    <div class="container">
+      
+    <h2 class="blockHeader">{{val}}</h2>
+    <span class="blockHeader__back">{{val}}</span>
     </div>
-  </main> 
+  </div>
 </template>
 
 
 
 
 <script>
-import db from '../assets/db/js.js';
-import blockHeader from './blockHeader.vue';
-import contentEl from './content.vue';
 
 export default {
-  name: 'js',
+  name: 'blockHeader',
   data () {
     return {
-      dbPost: db,
-      headerText: 'Prepare'
-
 
     }
   },
-  components: {
-    blockHeader,
-    contentEl
-  },
+  props:['val'],
   computed: {
 
   },
@@ -36,7 +28,7 @@ export default {
     
   },
   created(){
-    console.log(this.dbPost.Prepare);
+
   }
 
 }
@@ -48,7 +40,33 @@ export default {
 
 $accent: #0793B7;
 
-
+.blockHeader{
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  padding: 15px 0;
+  text-shadow: 1px 1px 1px darken($accent, 30%);
+  &__wrap{
+    background: $accent;
+    margin: 0 0 50px 0;
+    position: relative;
+  }
+  &__back{
+    color: rgba(255,255,255,.2);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    display: block;
+    font-size: 70px;
+    letter-spacing: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
 
 
 

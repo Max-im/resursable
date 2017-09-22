@@ -45,7 +45,6 @@ $accent: #0793B7;
   box-sizing: border-box;
   min-height: 100vh;
   background: #fff;
-  padding: 50px 20px;
 }
 
 .homePageMain{

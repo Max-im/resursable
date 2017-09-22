@@ -15,12 +15,14 @@
     </a>
 
     <footer class="footer">
-      <a 
-        href="https://max-im.github.io/" 
-        class="footer__link"
-        target="_blank">
-        Max Pozhidayev
-      </a>
+      <address>
+        <a 
+          href="https://max-im.github.io/" 
+          class="footer__link"
+          target="_blank">
+          Max Pozhidayev
+        </a>
+      </address>
       <small class="footer__copyright">
         Copyright © {{year}}
       </small>
@@ -63,7 +65,6 @@ export default {
         aside.classList.contains('aside_hide')
       ){
         aside.classList.remove('aside_hide'); 
-        target.innerHTML = '<';
       }
     },
 
@@ -104,12 +105,12 @@ $accent: #0793B7;
   padding: 0 0 0 20px;
   box-sizing: border-box;
   background: $accent;
-  transition: transform .5s;
   border-right: 3px solid darken($accent, 30%);
   z-index: 1;
+  transition: transform 1s ease-in-out;
   &_hide{
     transform: translateX(-100%);
-    transition: transform .5s;
+    transition: transform 1s ease-in-out;
 
   }
   &__logo{
@@ -152,7 +153,7 @@ $accent: #0793B7;
     letter-spacing: 1px;
     &:after{
       content: '';
-      transition: all .3s;
+      transition: all .6s;
       z-index: -1;
       display: block;
       height: 100%;
@@ -185,6 +186,10 @@ $accent: #0793B7;
     margin: 0 0 15px 0;
     display: block;
   }
+}
+
+address{
+  font-style: normal;
 }
 
  /* Large Devices, Wide Screens */

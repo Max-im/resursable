@@ -1,9 +1,8 @@
 <template>
   <main class="main">
-    <div class="singleContent">
-      <h1 class="singleContent__header">{{header}}</h1>
-
-      
+    <div class="design">
+      <blockHeader :val="headerText"></blockHeader>
+      <contentEl :db="dbPost"></contentEl>
     </div>
   </main> 
 </template>
@@ -12,17 +11,23 @@
 
 
 <script>
-import db from '../assets/db/prepare.js';
+import db from '../assets/db/design.js';
+import blockHeader from './blockHeader.vue';
+import contentEl from './content.vue';
 
 export default {
-  name: 'singleConten',
+  name: 'design',
   data () {
     return {
       dbPost: db,
-      post: null,
-      header: null
+      headerText: 'Design'
+
 
     }
+  },
+  components: {
+    blockHeader,
+    contentEl
   },
   computed: {
 
@@ -31,11 +36,7 @@ export default {
     
   },
   created(){
-    const postId = this.$route.params.id;
-    this.post = this.dbPost[postId];
-    this.header = postId;
-    console.log(this.dbPost[postId])
-
+    console.log(this.dbPost.Prepare);
   }
 
 }

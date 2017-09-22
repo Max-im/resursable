@@ -1,5 +1,4 @@
 const prepare = {
-    "Prepare":{
         "before work": [
             {
                 "name": "gmail.com",
@@ -31,7 +30,7 @@ const prepare = {
             },
             {
                 "name": "dropbox",
-                "link": "hhttps://www.dropbox.com/",
+                "link": "https://www.dropbox.com/",
                 "thumbnail": "thumbnailPath",
                 "img": "imgPath",
                 "hint": "storage"
@@ -105,7 +104,7 @@ const prepare = {
             },
             {
                 "name": "loungeFM",
-                "link": "",
+                "link": "http://www.loungefm.com.ua/",
                 "thumbnail": "thumbnailPath",
                 "img": "imgPath",
                 "hint": "music"
@@ -162,8 +161,8 @@ const prepare = {
                 "hint": "editor"
             },
             {
-                "name":".",
-                "link":"",
+                "name":"repl.it",
+                "link":"https://repl.it/",
                 "thumbnail": "thumbnailPath",
                 "img": "",
                 "hint": "editor"
@@ -172,42 +171,42 @@ const prepare = {
         "environment": [
             {
                 "name": "node",
-                "link":"",
+                "link":"https://nodejs.org/uk/",
                 "thumbnail": "thumbnailPath",
                 "img": "",
                 "hint": "engine"
             },
             {
                 "name": "git",
-                "link":"",
+                "link":"https://git-scm.com/",
                 "thumbnail": "thumbnailPath",
                 "img": "",
                 "hint": "VCS"
             },
             {
                 "name": "sublimeText",
-                "link":"",
+                "link":"https://www.sublimetext.com/",
                 "thumbnail": "thumbnailPath",
                 "img": "",
                 "hint": "editor"
             },
             {
                 "name": "vim",
-                "link":"",
+                "link":"https://github.com/vim/vim",
                 "thumbnail": "thumbnailPath",
                 "img": "",
                 "hint": "editor"
             },
             {
                 "name":"webpack",
-                "link":"",
+                "link":"https://webpack.github.io/",
                 "thumbnail": "thumbnailPath",
                 "img": "",
                 "hint": "packer"
             },
             {
                 "name":"gulp",
-                "link":"",
+                "link":"https://gulpjs.com/",
                 "thumbnail": "thumbnailPath",
                 "img": "",
                 "hint": "taskruner"
@@ -229,7 +228,6 @@ const prepare = {
                 "hint": "git decor"
             }
         ]
-    }
 }
 
 export default prepare;
