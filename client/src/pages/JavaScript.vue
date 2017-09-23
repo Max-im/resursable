@@ -2,8 +2,8 @@
   <div id="js">
   	<div class="container_flex">
   		<navPanel></navPanel>
-  		<javaScriptContent></javaScriptContent>
   	</div>
+    <javaScriptContent></javaScriptContent>
   </div>
 </template>
 

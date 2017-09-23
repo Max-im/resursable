@@ -52,6 +52,15 @@ $accent: #0793B7;
     background: $accent;
     margin: 0 0 50px 0;
     position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: darken($accent, 30%);
+    }
   }
   &__back{
     color: rgba(255,255,255,.2);

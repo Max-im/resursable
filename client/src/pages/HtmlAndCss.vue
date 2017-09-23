@@ -2,8 +2,8 @@
   <div id="htmlAndCss">
   	<div class="container_flex">
   		<navPanel></navPanel>
-  		<htmlAndCssContent></htmlAndCssContent>
   	</div>
+    <htmlAndCssContent></htmlAndCssContent>
   </div>
 </template>
 

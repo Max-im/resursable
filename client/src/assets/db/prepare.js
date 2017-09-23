@@ -98,28 +98,28 @@ const prepare = {
             {
                 "name": "radioJS",
                 "link": "https://radiojs.ru/",
-                "thumbnail": "radioJS.svg",
+                "thumbnail": "js-radio.svg",
                 "img": "imgPath",
                 "hint": "ru"
             },
             {
                 "name": "devZen",
                 "link": "http://devzen.ru/",
-                "thumbnail": "???",
+                "thumbnail": "devZen.svg",
                 "img": "imgPath",
                 "hint": "ru"
             },
             {
                 "name": "razbor-poletov",
                 "link": "http://razbor-poletov.com/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "flight.svg",
                 "img": "imgPath",
                 "hint": "ru"
             },
             {
                 "name": "radio-t",
                 "link": "https://radio-t.com/",
-                "thumbnail": "rt.svg",
+                "thumbnail": "tRadio.svg",
                 "img": "imgPath",
                 "hint": "ru"
             },

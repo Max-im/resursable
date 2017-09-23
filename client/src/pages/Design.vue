@@ -2,8 +2,8 @@
   <div id="design">
   	<div class="container_flex">
   		<navPanel></navPanel>
-  		<designContent></designContent>
   	</div>
+    <designContent></designContent>
   </div>
 </template>
 
