@@ -106,7 +106,7 @@ $accent: #0793B7;
   box-sizing: border-box;
   background: $accent;
   border-right: 3px solid darken($accent, 30%);
-  z-index: 1;
+  z-index: 100;
   transition: transform 1s ease-in-out;
   &_hide{
     transform: translateX(-100%);

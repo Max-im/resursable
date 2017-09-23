@@ -15,6 +15,13 @@ const design = {
             "hint": ""
         } ,
         {
+            "name":"calltoidea",
+            "img": "",
+            "thumbnail": "",
+            "link":"http://www.calltoidea.com/",
+            "hint": ""
+        },
+        {
             "name":"ui-patterns",
             "img": "",
             "thumbnail": "",
@@ -26,6 +33,13 @@ const design = {
             "img": "",
             "thumbnail": "",
             "link":"https://tympanus.net/Development/SectionSeparators/",
+            "hint": ""
+        },
+        {
+            "name":"onepagelove",
+            "img": "",
+            "thumbnail": "",
+            "link":"https://onepagelove.com/",
             "hint": ""
         },
         {
@@ -42,7 +56,7 @@ const design = {
             "name":"discovercolor",
             "img": "",
             "thumbnail": "",
-            "link":"discovercolor.ru",
+            "link":"http://discovercolor.ru",
             "hint": ""
         },
         {
@@ -71,20 +85,6 @@ const design = {
             "img": "",
             "thumbnail": "",
             "link":"https://www.webpagefx.com/web-design/random-color-picker/",
-            "hint": ""
-        },
-        {
-            "name":"calltoidea",
-            "img": "",
-            "thumbnail": "",
-            "link":"http://www.calltoidea.com/",
-            "hint": ""
-        },
-        {
-            "name":"onepagelove",
-            "img": "",
-            "thumbnail": "",
-            "link":"https://onepagelove.com/",
             "hint": ""
         },
         {
@@ -124,13 +124,6 @@ const design = {
 
     ],
     "backgrounds":[
-        {
-            "name":"pixels",
-            "img": "",
-            "thumbnail": "",
-            "link":"https://www.pexels.com",
-            "hint": ""
-        },  
         {
             "name":"placeit",
             "img": "",

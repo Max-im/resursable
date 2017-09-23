@@ -3,42 +3,42 @@ const prepare = {
             {
                 "name": "gmail.com",
                 "link": "https://gmail.com",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "gmail.svg",
                 "img": "imgPath",
                 "hint": "email"
             },
             {
                 "name": "mail.ru",
                 "link": "https://mail.ru/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "mail.svg",
                 "img": "imgPath",
                 "hint": "email"
             },
             {
                 "name": "gDrive",
                 "link": "https://drive.google.com/drive/my-drive",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "gDrive.svg",
                 "img": "imgPath",
                 "hint": "storage"
             },
             {
-                "name": "cloud",
+                "name": "mailCloud",
                 "link": "",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "mailCloud.svg",
                 "img": "imgPath",
                 "hint": "storage"
             },
             {
                 "name": "dropbox",
                 "link": "https://www.dropbox.com/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "dropbox.svg",
                 "img": "imgPath",
                 "hint": "storage"
             },
             {
                 "name": "calendar",
                 "link": "https://calendar.google.com/calendar",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "calendar.svg",
                 "img": "imgPath",
                 "hint": "planer"
             }
@@ -47,44 +47,65 @@ const prepare = {
             {
                 "name": "linkedIn",
                 "link": "https://www.linkedin.com/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "linkedin.svg",
                 "img": "imgPath",
                 "hint": "en"
             },
             {
                 "name": "facebook",
                 "link": "https://www.facebook.com/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "facebook.svg",
                 "img": "imgPath",
                 "hint": "en"
             },
             {
                 "name": "vk",
                 "link": "https://vk.com/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "vk.svg",
                 "img": "imgPath",
                 "hint": "ru"
             }  
         ],
         "sound": [
             {
+                "name": "fitradio",
+                "link": "http://www.fitradio.com/music#_=_",
+                "thumbnail": "fitRadio.svg",
+                "img": "imgPath",
+                "hint": "music"
+            },
+            {
+                "name": "loungeFM",
+                "link": "http://www.loungefm.com.ua/",
+                "thumbnail": "loungeFm.svg",
+                "img": "imgPath",
+                "hint": "music"
+            },
+            {
+                "name": "radio.obozrevatel",
+                "link": "http://radio.obozrevatel.com/player/73",
+                "thumbnail": "rOb.svg",
+                "img": "imgPath",
+                "hint": "music"
+            },
+            {
                 "name": "webStandartes",
                 "link": "https://soundcloud.com/web-standards",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "soundcloud.svg",
                 "img": "imgPath",
                 "hint": "ru"
             },
             {
                 "name": "radioJS",
                 "link": "https://radiojs.ru/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "radioJS.svg",
                 "img": "imgPath",
                 "hint": "ru"
             },
             {
                 "name": "devZen",
                 "link": "http://devzen.ru/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "???",
                 "img": "imgPath",
                 "hint": "ru"
             },
@@ -98,72 +119,51 @@ const prepare = {
             {
                 "name": "radio-t",
                 "link": "https://radio-t.com/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "rt.svg",
                 "img": "imgPath",
                 "hint": "ru"
             },
-            {
-                "name": "loungeFM",
-                "link": "http://www.loungefm.com.ua/",
-                "thumbnail": "thumbnailPath",
-                "img": "imgPath",
-                "hint": "music"
-            },
-            {
-                "name": "fitradio",
-                "link": "http://www.fitradio.com/music#_=_",
-                "thumbnail": "thumbnailPath",
-                "img": "imgPath",
-                "hint": "music"
-            },
-            {
-                "name": "radio.obozrevatel",
-                "link": "http://radio.obozrevatel.com/player/73",
-                "thumbnail": "thumbnailPath",
-                "img": "imgPath",
-                "hint": "music"
-            }
         ],
         "tools": [
             {
                 "name":"GitHub",
                 "link":"https://github.com/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "github.svg",
                 "img": "",
                 "hint": "repo"
             },
             {
                 "name":"Bitbucket",
                 "link":"https://bitbucket.org/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "bitbucket.svg",
                 "img": "",
                 "hint": "repo"
             },
             {
                 "name":"gist",
                 "link":"https://gist.github.com/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "gists.svg",
                 "img": "",
                 "hint": "notes"
             },
             {
                 "name":"CodePen",
                 "link":"http://codepen.io/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "codePen.svg",
                 "img": "",
                 "hint": "editor"
             },
             {
                 "name":"JSFiddle",
                 "link":"https://fiddle.jshell.net/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "jsfiddle.svg",
                 "img": "",
                 "hint": "editor"
             },
             {
                 "name":"repl.it",
                 "link":"https://repl.it/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "repl.svg",
                 "img": "",
                 "hint": "editor"
             }
@@ -172,42 +172,42 @@ const prepare = {
             {
                 "name": "node",
                 "link":"https://nodejs.org/uk/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "node.svg",
                 "img": "",
                 "hint": "engine"
             },
             {
                 "name": "git",
                 "link":"https://git-scm.com/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "git.svg",
                 "img": "",
                 "hint": "VCS"
             },
             {
                 "name": "sublimeText",
                 "link":"https://www.sublimetext.com/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "sublime.svg",
                 "img": "",
                 "hint": "editor"
             },
             {
                 "name": "vim",
                 "link":"https://github.com/vim/vim",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "vim.svg",
                 "img": "",
                 "hint": "editor"
             },
             {
                 "name":"webpack",
                 "link":"https://webpack.github.io/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "webpack.svg",
                 "img": "",
                 "hint": "packer"
             },
             {
                 "name":"gulp",
                 "link":"https://gulpjs.com/",
-                "thumbnail": "thumbnailPath",
+                "thumbnail": "gulp.svg",
                 "img": "",
                 "hint": "taskruner"
             }    
@@ -216,14 +216,14 @@ const prepare = {
             {
                 "name":"Wireframe.cc",
                 "img": "",
-                "thumbnail": "",
+                "thumbnail": "wireframe.svg",
                 "link":"https://wireframe.cc/",
                 "hint": "scratch"
             },
             {
                 "name":"Markdown",
                 "img": "",
-                "thumbnail": "",
+                "thumbnail": "markdown.svg",
                 "link":"https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet",
                 "hint": "git decor"
             }

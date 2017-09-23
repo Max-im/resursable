@@ -7,7 +7,11 @@
         class="content__list">
         <h3 class="content__header">{{header}}</h3>
         <span class="content__index">{{index + 1}}</span>
-        <li v-for="item in sublist">
+        <li class="content__sublist" v-for="item in sublist">
+          <img
+            class="content__img" 
+            :src="'./src/assets/icons/'+item.thumbnail" 
+            :alt="item.name">
           <a 
             :href="item.link" 
             target="_blank"
@@ -51,7 +55,7 @@ export default {
 <style lang="scss">
 
 $accent: #0793B7;
-$top: #00796B;
+$top: #ee682f;
 
 .content{
   &__container{
@@ -78,11 +82,27 @@ $top: #00796B;
     text-indent: 50px;
     padding: 10px 0;
     border-bottom: 2px solid #fff;
+  }
+  &__sublist{
+    position: relative;  
+    z-index: 3;
     &:hover{
       background: $accent;
-      color: #fff;
       transition: all .3s;
+      .content__link{
+        color: #fff;
+      }
     }
+  }
+  &__img{
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    top: calc(50% - 10px);
+    overflow: hidden;
+
+    width: 20px;
+    height: 20px;
   }
   &__header{
     background: $top;

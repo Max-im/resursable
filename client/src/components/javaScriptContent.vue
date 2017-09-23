@@ -20,7 +20,7 @@ export default {
   data () {
     return {
       dbPost: db,
-      headerText: 'Prepare'
+      headerText: 'Javascript'
 
 
     }
@@ -36,7 +36,6 @@ export default {
     
   },
   created(){
-    console.log(this.dbPost.Prepare);
   }
 
 }
