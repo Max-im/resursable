@@ -10,14 +10,14 @@ const html = {
         {   
             "name":"Schema",
             "img": "",
-            "thumbnail": "",
+            "thumbnail": "schema.svg",
             "link":"http://schema.org/docs/schemas.html",
             "hint": ""
         },
         {   
             "name":"Testing",
             "img": "",
-            "thumbnail": "",
+            "thumbnail": "404.svg",
             "link":"https://search.google.com/structured-data/testing-tool",
             "hint": ""
         }
@@ -35,13 +35,6 @@ const html = {
             "img": "",
             "thumbnail": "foundation.svg",
             "link":"https://foundation.zurb.com/",
-            "hint": ""
-        },
-        {   
-            "name":"gold Grid",
-            "img": "",
-            "thumbnail": "",
-            "link":"!!!",
             "hint": ""
         }
     ],
@@ -65,7 +58,7 @@ const html = {
         {
             "name":"BEM",
             "img": "",
-            "thumbnail": "",
+            "thumbnail": "bem.svg",
             "link":"https://css-tricks.com/bem-101/",
             "hint": ""
         }
@@ -74,29 +67,22 @@ const html = {
         {
             "name":"<head>",
             "img": "",
-            "thumbnail": "",
+            "thumbnail": "head.svg",
             "link":"https://github.com/joshbuchea/HEAD",
             "hint": "en"
         },
         {
             "name":"Flexbox",
             "img": "",
-            "thumbnail": "",
+            "thumbnail": "flexbaox.svg",
             "link":"http://html5.by/blog/flexbox/",
             "hint": "ru"
         },
         {
             "name":"Box Shadow Effects",
             "img": "",
-            "thumbnail": "",
+            "thumbnail": "404.svg",
             "link":"https://paulund.co.uk/learn-css-box-shadow",
-            "hint": ""
-        },
-        {
-            "name":"mediaqueri",
-            "img": "",
-            "thumbnail": "",
-            "link":"https://mediaqueri.es/",
             "hint": ""
         }
     ]

@@ -36,6 +36,13 @@ const design = {
             "hint": ""
         },
         {
+            "name":"mediaqueri",
+            "img": "",
+            "thumbnail": "mq.svg",
+            "link":"https://mediaqueri.es/",
+            "hint": ""
+        },
+        {
             "name":"OnePageLove",
             "img": "",
             "thumbnail": "onePageLove.svg",
@@ -134,14 +141,14 @@ const design = {
         {
             "name":"placeit",
             "img": "",
-            "thumbnail": "???",
+            "thumbnail": "404.svg",
             "link":"https://placeit.net/",
             "hint": ""
         },
         {
             "name":"randomuser",
             "img": "",
-            "thumbnail": "???",
+            "thumbnail": "404.svg",
             "link":"https://randomuser.me/",
             "hint": ""
         },  
@@ -183,7 +190,7 @@ const design = {
         {
             "name":"Img64",
             "img": "",
-            "thumbnail": "",
+            "thumbnail": "404.svg",
             "link":"https://www.base64-image.de",
             "hint": ""
         },
@@ -293,7 +300,7 @@ const design = {
         {
             "name":"webmasters",
             "img": "",
-            "thumbnail": "????",
+            "thumbnail": "404.svg",
             "link":"http://webmasters.teamdev.com/",
             "hint": ""
         },
@@ -321,9 +328,9 @@ const design = {
         {
             "name":"topcoat",
             "img": "",
-            "thumbnail": "",
+            "thumbnail": "404.svg",
             "link":"http://topcoat.io/",
-            "hint": "???"
+            "hint": ""
         },
         
         
