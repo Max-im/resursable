@@ -1,21 +1,22 @@
 <template>
   <div id="design">
-  	<div class="container_flex">
-  		<navPanel></navPanel>
-  	</div>
+ 	<contentMenu></contentMenu>
     <designContent></designContent>
+	<contentFooter></contentFooter>
   </div>
 </template>
 
 <script>
-import navPanel from '../components/navPanel.vue';
+import contentMenu from '../components/contentMenu.vue';
 import designContent from '../components/designContent.vue';
+import contentFooter from '../components/contentFooter.vue';
 
 export default {
   name: 'Design',
   components: {
-	navPanel,
-	designContent  
+	contentMenu,
+	designContent,
+	contentFooter  
   }
 }
 </script>

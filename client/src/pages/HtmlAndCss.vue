@@ -1,21 +1,22 @@
 <template>
   <div id="htmlAndCss">
-  	<div class="container_flex">
-  		<navPanel></navPanel>
-  	</div>
+ 	<contentMenu></contentMenu>
     <htmlAndCssContent></htmlAndCssContent>
+    <contentFooter></contentFooter>
   </div>
 </template>
 
 <script>
-import navPanel from '../components/navPanel.vue';
+import contentMenu from '../components/contentMenu.vue';
 import htmlAndCssContent from '../components/htmlAndCssContent.vue';
+import contentFooter from '../components/contentFooter.vue';
 
 export default {
   name: 'htmlAndCss',
   components: {
-	navPanel,
-	htmlAndCssContent  
+	contentMenu,
+	htmlAndCssContent,
+	contentFooter  
   }
 }
 </script>

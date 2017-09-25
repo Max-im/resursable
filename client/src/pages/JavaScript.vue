@@ -1,21 +1,23 @@
 <template>
   <div id="js">
-  	<div class="container_flex">
-  		<navPanel></navPanel>
-  	</div>
+ 	<contentMenu></contentMenu>
     <javaScriptContent></javaScriptContent>
+    <contentFooter></contentFooter>
   </div>
 </template>
 
 <script>
-import navPanel from '../components/navPanel.vue';
+import contentMenu from '../components/contentMenu.vue';
 import javaScriptContent from '../components/javaScriptContent.vue';
+import contentFooter from '../components/contentFooter.vue';
+
 
 export default {
   name: 'javaScript',
   components: {
-	navPanel,
-	javaScriptContent  
+	contentMenu,
+	javaScriptContent,  
+	contentFooter
   }
 }
 </script>
