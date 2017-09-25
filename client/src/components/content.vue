@@ -67,14 +67,19 @@ $top: #ee682f;
     border-radius: 10px;
     position: relative;
     margin: 20px 50px;
-    // flex: 0 0 20%;
     width: 20%;
+    z-index: 10;
     min-width: 280px;
     background: #f5f0ec;
     padding: 0 0 10px 0;
     text-align: center;
     min-height: 370px;
     overflow: hidden;
+    opacity: .7;
+    transition: all .3s;
+    &:hover{
+      opacity: 1;
+    }
   }
   &__link{
     color: #8d8070;

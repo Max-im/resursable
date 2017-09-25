@@ -3,7 +3,7 @@ const html = {
         {   
             "name":"Open Graph",
             "img": "",
-            "thumbnail": "",
+            "thumbnail": "openGraph.svg",
             "link":"http://ruogp.me/",
             "hint": ""
         },
@@ -20,28 +20,21 @@ const html = {
             "thumbnail": "",
             "link":"https://search.google.com/structured-data/testing-tool",
             "hint": ""
-        },
-        {   
-            "name":"microtest",
-            "img": "",
-            "thumbnail": "",
-            "link":"https://webmaster.yandex.ru/tools/microtest/",
-            "hint": ""
         }
     ],
     "gridLayouts": [
          {   
             "name":"bootstrap",
             "img": "",
-            "thumbnail": "",
+            "thumbnail": "bootstrap.svg",
             "link": "http://getbootstrap.com/",
             "hint": ""
         },
         {   
             "name":"Foundation",
             "img": "",
-            "thumbnail": "",
-            "link":"!!!",
+            "thumbnail": "foundation.svg",
+            "link":"https://foundation.zurb.com/",
             "hint": ""
         },
         {   
@@ -56,15 +49,15 @@ const html = {
         {   
             "name":"sass",
             "img": "",
-            "thumbnail": "",
-            "link":"!!!",
+            "thumbnail": "sass.svg",
+            "link":"http://sass-lang.com/",
             "hint": ""
         },
         {   
             "name":"stylus",
             "img": "",
-            "thumbnail": "",
-            "link":"!!!",
+            "thumbnail": "stylus.svg",
+            "link":"http://stylus-lang.com/",
             "hint": ""
         }
     ],

@@ -1,5 +1,5 @@
 const design = {
-    "patterns": [
+    "ui": [
         {
             "name":"Pinterest",
             "img": "",
@@ -127,7 +127,7 @@ const design = {
             "thumbnail": "colorsName.svg",
             "link":"http://colorscheme.ru/color-names.html",
             "hint": ""
-        },   
+        }
 
     ],
     "backgrounds":[
@@ -151,6 +151,27 @@ const design = {
             "thumbnail": "subPatern.svg",
             "link":"http://subtlepatterns.com/",
             "hint": ""
+        },  
+        {
+            "name":"patterncooler",
+            "img": "",
+            "thumbnail": "freeSeamlessPatern.svg",
+            "link":"https://patterncooler.com/",
+            "hint": ""
+        },  
+        {
+            "name":"patterninja",
+            "img": "",
+            "thumbnail": "patterninja.svg",
+            "link":"https://patterninja.com/",
+            "hint": ""
+        },  
+        {
+            "name":"colourlovers",
+            "img": "",
+            "thumbnail": "colorTrends.svg",
+            "link":"http://www.colourlovers.com/",
+            "hint": ""
         },
         {
             "name":"canva",
@@ -158,7 +179,14 @@ const design = {
             "thumbnail": "canva.svg",
             "link":"https://www.canva.com/",
             "hint": ""
-        }
+        },
+        {
+            "name":"Img64",
+            "img": "",
+            "thumbnail": "",
+            "link":"https://www.base64-image.de",
+            "hint": ""
+        },
         
     ],
     "images":[
@@ -170,10 +198,17 @@ const design = {
             "hint": ""
         },
         {
-            "name":"Img64",
+            "name":"freeimages",
             "img": "",
-            "thumbnail": "",
-            "link":"https://www.base64-image.de",
+            "thumbnail": "freeImg.svg",
+            "link":"http://www.freeimages.com/",
+            "hint": ""
+        },
+        {
+            "name":"foter",
+            "img": "",
+            "thumbnail": "foter.svg",
+            "link":"http://foter.com/",
             "hint": ""
         },      
         {
@@ -205,10 +240,24 @@ const design = {
             "hint": ""
         },      
         {
+            "name":"openphoto",
+            "img": "",
+            "thumbnail": "curated.svg",
+            "link":"http://openphoto.net/",
+            "hint": ""
+        },      
+        {
             "name":"Unsplash",
             "img": "",
             "thumbnail": "unsplash.svg",
             "link":"https://unsplash.com/",
+            "hint": ""
+        },      
+        {
+            "name":"flickr",
+            "img": "",
+            "thumbnail": "flicker.svg",
+            "link":"https://www.flickr.com/",
             "hint": ""
         },      
         {
