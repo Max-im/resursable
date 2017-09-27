@@ -191,6 +191,13 @@ const prepare = {
                 "hint": "editor"
             },
             {
+                "name":"uikit",
+                "img": "",
+                "thumbnail":"ukit.svg",
+                "hint": "",
+                "link":"https://getuikit.com/"
+            },
+            {
                 "name": "vim",
                 "link":"https://github.com/vim/vim",
                 "thumbnail": "vim.svg",
