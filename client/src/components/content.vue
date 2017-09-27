@@ -1,25 +1,26 @@
 <template>
   <div class="content">
     <div class="container_flex content__container">
-      <ul 
-        v-for="(sublist, header, index) in db" 
-        :key="index"
-        class="content__list">
-        <h3 class="content__header">{{header}}</h3>
-        <span class="content__index">{{index + 1}}</span>
-        <li class="content__sublist" v-for="item in sublist">
-          <img
-            class="content__img" 
-            :src="'./src/assets/icons/'+item.thumbnail" 
-            :alt="item.name">
-          <a 
-            :href="item.link" 
-            target="_blank"
-            class="content__link">
-            {{item.name}}
-          </a>
-        </li>
-      </ul>
+      <div v-for="(sublist, header, index) in db">
+        <ul 
+          :key="index"
+          class="content__list">
+          <h3 class="content__header">{{header}}</h3>
+          <span class="content__index">{{index + 1}}</span>
+          <li class="content__sublist" v-for="item in sublist">
+            <img
+              class="content__img" 
+              :src="'./src/assets/icons/'+item.thumbnail" 
+              :alt="item.name">
+            <a 
+              :href="item.link" 
+              target="_blank"
+              class="content__link">
+              {{item.name}}
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>

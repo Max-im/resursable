@@ -9,14 +9,8 @@
       </div>
 
 
-      <div class="contentFooter__phone">
-        <h4>phone</h4>
-        <p>+38(050) 77-23-169</p>
-      </div>
-      <div class="contentFooter__mail">
-        <h4>mail</h4>
-        <p>pogidaevmo@gmail.com</p>
-      </div>
+      <p class="contentFooter__big">+38(050) 77-23-169</p>
+      <p class="contentFooter__big">pogidaevmo@gmail.com</p>
 
       <nav role="nav" class="nav">
         <ul>
@@ -33,12 +27,27 @@
     </div>
     
     <div class="container_flex contentFooter__bottomContainer">
+      <a 
+        href="https://max-im.github.io/" 
+        class="contentFooter__resume">
+        Max Pozhidayev
+      </a>
       <div class="contentFooter__social">
-        <ul>
-          <li></li>
+        <ul >
+          <li 
+            class="contentFooter__socialList"
+            v-for="item in social">
+            <a 
+              class="contentFooter__socialLink"
+              :href="item.link">
+              <img 
+                class="contentFooter__socialImg"
+                :src="'./src/assets/icons/'+item.img" 
+                :alt="item.name">
+            </a>
+          </li>
         </ul>
       </div>
-      
     </div>
   </footer>
 </template>
@@ -53,6 +62,28 @@ export default {
   data () {
     return {
        list: ['Prepare', 'Design', 'HTML+CSS', 'JavaScript'],
+       social: [
+        {
+          name: 'fb',
+          img: 'facebook.svg',
+          link: 'https://www.facebook.com/max.pozhidaev.7'
+        },
+        {
+          name: 'vk',
+          img: 'vk.svg',
+          link: 'https://vk.com/id8889814'
+        },
+        {
+          name: 'linkedIn',
+          img: 'linkedin.svg',
+          link: 'https://www.linkedin.com/in/maxim-pozhidaev-16726811a/'
+        },
+        {
+          name: 'gitHub',
+          img: 'github.svg',
+          link: 'https://github.com/Max-im'
+        }
+       ]
     }
   },
   computed: {
@@ -114,6 +145,35 @@ $blackColor: #212121;
     &:after{
       display: none;
     }
+  }
+  &__big{
+    font-size: 25px;
+    color: $accent;
+    align-self: center;
+  }
+  &__resume{
+    color: #777;
+    text-decoration: underline;
+  }
+  
+  &__socialList{
+    display: inline-block;
+    margin: 0 5px;
+  }
+  &__socialLink{
+    width: 25px;
+    height: 25px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: .5;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  &__socialImg{
+    width: 100%;
+    height: 100%;
   }
 }
 

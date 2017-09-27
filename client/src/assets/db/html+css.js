@@ -24,7 +24,14 @@ const html = {
     ],
     "gridLayouts": [
          {   
-            "name":"bootstrap",
+            "name":"Materialize",
+            "img": "",
+            "thumbnail": "materialize.svg",
+            "link": "http://materializecss.com/",
+            "hint": ""
+        },
+        {   
+            "name":"Bootstrap",
             "img": "",
             "thumbnail": "bootstrap.svg",
             "link": "http://getbootstrap.com/",
@@ -39,6 +46,13 @@ const html = {
         }
     ],
     "preprocessers": [
+        {   
+            "name":"htmlbook",
+            "img": "",
+            "thumbnail": "htmlbook.svg",
+            "link":"http://htmlbook.ru/css",
+            "hint": ""
+        },
         {   
             "name":"sass",
             "img": "",
@@ -64,6 +78,13 @@ const html = {
         }
     ],
     "semantic": [
+        {
+            "name":"htmlbook",
+            "img": "",
+            "thumbnail": "htmlbook.svg",
+            "link":"http://htmlbook.ru/html",
+            "hint": "ru"
+        },
         {
             "name":"<head>",
             "img": "",
