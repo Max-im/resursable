@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
+
 import App from './pages/App.vue';
 import Prepare from './pages/Prepare.vue';
 import Design from './pages/Design.vue';

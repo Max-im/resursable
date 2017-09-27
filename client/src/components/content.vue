@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div class="container_flex content__container">
-      <div v-for="(sublist, header, index) in db">
+      <div class="content__wrapper content__wrapper_height" v-for="(sublist, header, index) in db">
         <ul 
           :key="index"
           class="content__list">
@@ -20,6 +20,12 @@
             </a>
           </li>
         </ul>
+        <a 
+          href="#" 
+          @click.prevent="showList" 
+          class="content__showList">
+          show
+        </a>
       </div>
     </div>
   </div>
@@ -29,23 +35,51 @@
 
 
 <script>
+import $ from 'jquery';
+
 
 export default {
   name: 'blockHeader',
   data () {
     return {
-
     }
   },
   props:['db'],
   computed: {
-
-  },
-  methods:{
     
   },
-  created(){
-
+  methods:{
+    showList: function(e){
+      const target = e.target.closest('.content__wrapper');
+      const text = e.target.innerHTML.trim(); 
+      const liLength = $(target).find('.content__sublist').length;
+      
+      if(liLength < 9) return;
+      if(target.classList.contains('content__wrapper_height')){
+        $(target).animate({
+          height: '100%'
+        })
+      }
+      else{
+       $(target).animate({
+          height: '417px'
+        }) 
+      }
+      target.classList.toggle('content__wrapper_height');
+      if(text === 'show') {
+        e.target.innerHTML = 'hide';
+      }
+      else{
+        e.target.innerHTML = 'show';
+      }
+    }
+  },
+  mounted(){
+    $('.content__wrapper').each(function(item){
+      const liLength = $(this).find('.content__sublist').length;
+      if(liLength > 8) return;
+      $(this).find('.content__showList').css({color: '#555'})
+    })
   }
 
 }
@@ -61,20 +95,45 @@ $top: #ee682f;
 .content{
   &__container{
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: start;
+  }
+  &__wrapper{
+    height: 417px;
+    overflow: hidden;
+    margin: 0 0 30px 0;
+    width: calc( 100% / 4 );
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  &__showList{
+    height: 30px;
+    width: calc( 100% - 40px);
+    background: #333;
+    position: absolute; 
+    bottom: 0;
+    left: 20px;
+    z-index: 50;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
   }
   &__list{
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    border-radius: 10px 10px;
     position: relative;
-    margin: 20px 50px;
-    width: 20%;
+    width: 100%;
+    height: calc( 100% - 30px);
+    box-sizing: border-box;
     z-index: 10;
+    min-height: 415px;
     min-width: 280px;
     background: #f5f0ec;
-    padding: 0 0 10px 0;
+    padding: 0 0 30px 0;
     text-align: center;
-    min-height: 370px;
     overflow: hidden;
     opacity: .7;
     transition: all .3s;
@@ -89,6 +148,7 @@ $top: #ee682f;
     position: relative;
     text-indent: 50px;
     padding: 10px 0;
+    box-sizing: border-box;
     border-bottom: 2px solid #fff;
   }
   &__sublist{
@@ -131,7 +191,7 @@ $top: #ee682f;
   }
   &__index{
     position: absolute;
-    color: rgba(255,255,255,.5);
+    color: rgba(0,0,0,.2);
     font-size: 250px;
     width: 100%;
     left: 0;

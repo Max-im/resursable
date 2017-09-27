@@ -117,7 +117,7 @@ $blackColor: #212121;
   }
   &__bottomContainer{
     justify-content: space-between;
-    padding: 10px 0 20px 0;
+    padding: 30px 0 20px 0;
     color: #fff;
   }
   &__logoWrap{
