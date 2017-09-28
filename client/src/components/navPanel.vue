@@ -1,6 +1,6 @@
 <template> 
   <aside class="aside" :class="{aside_hide: isHide}">
-    <router-link to='/' class="aside__logo">code - guide</router-link>
+    <router-link to='/' class="aside__logo">resursable</router-link>
     <nav role="nav" class="nav">
       <ul>
         <li v-for="(item, index) in list" :key="index">

@@ -1,9 +1,9 @@
 <template> 
   <main class="main">
     <div class="homePageMain">
-      <h1 class="homePageMain__header">code -
+      <h1 class="homePageMain__header">
         <span class="homePageMain__spanWrap">
-          <span class="homePageMain__span">guide</span>
+          <span class="homePageMain__span">resursable</span>
         </span>
       </h1>
     </div>

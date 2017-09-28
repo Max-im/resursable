@@ -4,7 +4,7 @@
       <div class="contentFooter__logoWrap">
         <router-link to="/" 
           class="contentFooter__logo">
-          code-guide
+          resursable
         </router-link>
       </div>
 
