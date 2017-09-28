@@ -35,13 +35,7 @@ const js = {
             "hint": "",
             "link":"https://vuejs.org/"
         },
-        {
-            "name":"jquerymy",
-            "img": "",
-            "thumbnail":"jquerymy.svg",
-            "hint": "",
-            "link":"http://jquerymy.com/#/"
-        },
+        
     ],
     "libraries":[
         {
@@ -64,6 +58,13 @@ const js = {
             "thumbnail":"axios.svg",
             "hint": "",
             "link":"https://www.npmjs.com/package/axios"
+        },
+        {
+            "name":"jquerymy",
+            "img": "",
+            "thumbnail":"jquerymy.svg",
+            "hint": "",
+            "link":"http://jquerymy.com/#/"
         },
 
     ],
