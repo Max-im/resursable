@@ -1,9 +1,8 @@
 <template>
   <div class="blockHeader__wrap">
     <div class="container">
-      
-    <h2 class="blockHeader">{{val}}</h2>
-    <span class="blockHeader__back">{{val}}</span>
+      <h2 class="blockHeader">{{val}}</h2>
+      <span class="blockHeader__back">{{val}}</span>
     </div>
   </div>
 </template>
@@ -71,7 +70,7 @@ $accent: #0793B7;
     margin: auto;
     display: block;
     font-size: 70px;
-    letter-spacing: 50px;
+    letter-spacing: 38px;
     text-transform: uppercase;
     font-weight: bold;
   }
@@ -92,7 +91,24 @@ $accent: #0793B7;
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-  
+.blockHeader{
+  font-size: 35px;
+  letter-spacing: 10px;
+  padding: 15px 0;
+  &__wrap{
+    margin: 0 0 50px 0;
+    &:after{
+      bottom: -5px;
+      left: 0;
+      height: 5px;
+    }
+  }
+  &__back{
+    top: 10px;
+    font-size: 50px;
+    letter-spacing: 20px;
+  }
+}
 
 }
 
@@ -103,7 +119,24 @@ $accent: #0793B7;
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+.blockHeader{
+  font-size: 30px;
+  letter-spacing: 8px;
+  padding: 15px 0;
+  &__wrap{
+    margin: 0 0 50px 0;
+    &:after{
+      bottom: -5px;
+      left: 0;
+      height: 5px;
+    }
+  }
+  &__back{
+    top: 10px;
+    font-size: 45px;
+    letter-spacing: 10px;
+  }
+}
 
 
 }
@@ -111,7 +144,23 @@ $accent: #0793B7;
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+.blockHeader{
+  font-size: 25px;
+  letter-spacing: 5px;
+  &__wrap{
+    margin: 0 0 50px 0;
+    &:after{
+      bottom: -5px;
+      left: 0;
+      height: 5px;
+    }
+  }
+  &__back{
+    top: 10px;
+    font-size: 30px;
+    letter-spacing: 6px;
+  }
+}
   
 
 }

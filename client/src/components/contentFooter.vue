@@ -114,11 +114,14 @@ $blackColor: #212121;
     justify-content: space-between;
     color: #fff;
     border-bottom: 1px solid #333;
+    padding: 0 15px;
+    box-sizing: border-box;
   }
   &__bottomContainer{
     justify-content: space-between;
-    padding: 30px 0 20px 0;
+    padding: 30px 15px 20px 15px;
     color: #fff;
+    box-sizing: border-box;
   }
   &__logoWrap{
     display: flex;
@@ -129,16 +132,6 @@ $blackColor: #212121;
     text-transform: uppercase;
     align-self: center;
     position: relative;
-    &:after{
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: url('../assets/bgColorful.jpg');
-      background-size: cover;
-    }
   }
   &__nav{
     padding: 5px 0;
@@ -147,7 +140,7 @@ $blackColor: #212121;
     }
   }
   &__big{
-    font-size: 25px;
+    font-size: 20px;
     color: $accent;
     align-self: center;
   }
@@ -204,6 +197,50 @@ $blackColor: #212121;
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
+.contentFooter{
+  padding: 30px 0 20px 0;
+  &__container{
+    justify-content: space-between;
+    padding: 0 15px;
+    flex-wrap: wrap;
+    &>*{
+      width: 50%;
+    }
+  }
+  &__bottomContainer{
+    justify-content: space-between;
+    padding: 30px 15px 20px 15px;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  &__logoWrap{
+    order: 4;
+  }
+  &__logo{
+    font-size: 25px;
+    align-self: center;
+  }
+  &__nav{
+    padding: 5px 0;
+    &:after{
+      display: none;
+    }
+  }
+  &__big{
+    font-size: 20px;
+    color: $accent;
+    align-self: center;
+    padding: 0 0 30px 0;
+  }
+  &__socialList{
+    margin: 0 5px;
+  }
+  &__socialLink{
+    width: 25px;
+    height: 25px;
+  }
+}
+
 
 
 }
@@ -211,6 +248,48 @@ $blackColor: #212121;
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+.contentFooter{
+  padding: 30px 0 20px 0;
+  &__container{
+    padding: 0 15px;
+    flex-wrap: wrap;
+    &>*{
+      width: 100%;
+    }
+  }
+  &__bottomContainer{
+    justify-content: space-between;
+    padding: 30px 15px 20px 15px;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  &__logoWrap{
+    order: 0;
+    padding: 0 0 20px;
+  }
+  &__logo{
+    font-size: 20px;
+  }
+  &__nav{
+    padding: 5px 0;
+    &:after{
+      display: none;
+    }
+  }
+  &__big{
+    font-size: 15px;
+    color: $accent;
+    align-self: center;
+    padding: 0 0 20px 0;
+  }
+  &__socialList{
+    margin: 0 5px;
+  }
+  &__socialLink{
+    width: 25px;
+    height: 25px;
+  }
+}
 
   
 

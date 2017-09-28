@@ -19,13 +19,14 @@
               {{item.name}}
             </a>
           </li>
+          <a 
+            href="#" 
+            @click.prevent="showList" 
+            class="content__showList">
+            show
+          </a>
         </ul>
-        <a 
-          href="#" 
-          @click.prevent="showList" 
-          class="content__showList">
-          show
-        </a>
+        
       </div>
     </div>
   </div>
@@ -106,26 +107,13 @@ $top: #ee682f;
     box-sizing: border-box;
     position: relative;
   }
-  &__showList{
-    height: 30px;
-    width: calc( 100% - 40px);
-    background: #333;
-    position: absolute; 
-    bottom: 0;
-    left: 20px;
-    z-index: 50;
-    border-radius: 0 0 10px 10px;
-    text-align: center;
-    color: #fff;
-    line-height: 30px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-  }
   &__list{
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     border-radius: 10px 10px;
     position: relative;
     width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
     height: calc( 100% - 30px);
     box-sizing: border-box;
     z-index: 10;
@@ -140,6 +128,21 @@ $top: #ee682f;
     &:hover{
       opacity: 1;
     }
+  }
+  &__showList{
+    height: 30px;
+    width: calc( 100%);
+    background: #333;
+    position: absolute; 
+    bottom: 0;
+    left: 0px;
+    z-index: 50;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
   }
   &__link{
     color: #8d8070;
@@ -202,8 +205,22 @@ $top: #ee682f;
 
 
  /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-  
+@media only screen and (max-width : 1300px) {
+.content{
+  &__wrapper{
+    height: 417px;
+    overflow: hidden;
+    margin: 0 0 30px 0;
+    width: calc( 100% / 3 );
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+
+
+
+
 
 
 }
@@ -215,6 +232,17 @@ $top: #ee682f;
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
   
+.content{
+  &__wrapper{
+    height: 417px;
+    overflow: hidden;
+    margin: 0 0 30px 0;
+    width: calc( 100% / 2 );
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
 
 }
 
@@ -225,7 +253,18 @@ $top: #ee682f;
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+  
+.content{
+  &__wrapper{
+    height: 417px;
+    overflow: hidden;
+    margin: 0 0 30px 0;
+    width: calc( 100% );
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
 
 
 }
